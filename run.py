@@ -31,11 +31,11 @@ if __name__ == "__main__":
 
     config = {}
 
-    with open(local_config, 'r') as file:
+    with open(local_config, 'r', encoding='utf-8') as file:
         config = yaml.safe_load(file)
 
     if user_config.exists():
-        with open(user_config, 'r') as file:
+        with open(user_config, 'r', encoding='utf-8') as file:
             user_config_data = yaml.safe_load(file) or {}
         merge_config(config, user_config_data) 
 
@@ -59,19 +59,19 @@ if __name__ == "__main__":
     title = config['profile'][profile_name].get("title", SCREENSAVER_TITLE)
     
     # opens profiles source file
-    with open(expanduser(config['profile'][profile_name]['top_left']), 'r') as ascii:
+    with open(expanduser(config['profile'][profile_name]['top_left']), 'r', encoding='utf-8') as ascii:
         top_left = ascii.read()
-    with open(expanduser(config['profile'][profile_name]['top_right']), 'r') as ascii:
+    with open(expanduser(config['profile'][profile_name]['top_right']), 'r', encoding='utf-8') as ascii:
         top_right = ascii.read()
-    with open(expanduser(config['profile'][profile_name]['top_center']), 'r') as ascii:
+    with open(expanduser(config['profile'][profile_name]['top_center']), 'r', encoding='utf-8') as ascii:
         top_center = ascii.read()
-    with open(expanduser(config['profile'][profile_name]['centered_text']), 'r') as ascii:
+    with open(expanduser(config['profile'][profile_name]['centered_text']), 'r', encoding='utf-8') as ascii:
         centered_text = ascii.read()
-    with open(expanduser(config['profile'][profile_name]['bottom_left']), 'r') as ascii:
+    with open(expanduser(config['profile'][profile_name]['bottom_left']), 'r', encoding='utf-8') as ascii:
         bottom_left = ascii.read()
-    with open(expanduser(config['profile'][profile_name]['bottom_center']), 'r') as ascii:
+    with open(expanduser(config['profile'][profile_name]['bottom_center']), 'r', encoding='utf-8') as ascii:
         bottom_center = ascii.read()
-    with open(expanduser(config['profile'][profile_name]['bottom_right']), 'r') as ascii:
+    with open(expanduser(config['profile'][profile_name]['bottom_right']), 'r', encoding='utf-8') as ascii:
         bottom_right = ascii.read()
 
     # wrapper func
