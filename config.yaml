@@ -1,0 +1,18 @@
+profile:
+  j316:
+    top_left: "./ascii_files/j316/top_left.ascii"
+    top_center: "./ascii_files/j316/top_center.ascii"
+    top_right: "./ascii_files/j316/top_right.ascii"
+    centered_text: "./ascii_files/j316/centered_text.txt"
+    bottom_left: "./ascii_files/j316/bottom_left.ascii"
+    bottom_center: "./ascii_files/j316/bottom_center.ascii"
+    bottom_right: "./ascii_files/j316/bottom_right.ascii"
+  p23:
+    top_left: "./ascii_files/p23/top_left.ascii"
+    top_center: "./ascii_files/p23/top_center.ascii"
+    top_right: "./ascii_files/p23/top_right.ascii"
+    centered_text: "./ascii_files/p23/centered_text.txt"
+    bottom_left: "./ascii_files/p23/bottom_left.ascii"
+    bottom_center: "./ascii_files/p23/bottom_center.ascii"
+    bottom_right: "./ascii_files/p23/bottom_right.ascii"
+    title: "PSALM 23"
