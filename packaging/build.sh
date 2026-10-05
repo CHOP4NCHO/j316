@@ -23,7 +23,7 @@ chmod 755 "$STAGE/usr/bin/j316"
 
 fpm -s dir -t rpm -n j316 -v "$VERSION" -a noarch \
   --license MIT \
-  --url "" \
+  --url "https://github.com/CHOP4NCHO/j316.git" \
   --maintainer "$MAINTAINER" \
   --description "$DESCRIPTION" \
   --depends python3 --depends python3-pyyaml \
